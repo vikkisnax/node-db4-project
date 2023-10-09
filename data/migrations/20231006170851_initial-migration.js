@@ -25,7 +25,7 @@ exports.up = async function(knex) {
             .onDelete('RESTRICT')
             .onUpdate('RESTRICT')
     })
-    .createTable('step_ingredients', table=> {
+    .createTable('step_ingredients', table => {
         table.increments('step_ingredient_id')
         table.float('quantity').notNullable()
         //fk's:
