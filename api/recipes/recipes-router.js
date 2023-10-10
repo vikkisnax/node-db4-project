@@ -10,7 +10,7 @@ router.get('/:recipe_id', (req, res, next)=>{
     .catch(next)
 })
 
-//error handling mw
+//error handling mw bc no mw file 
 router.use((err, req, res, next)=>{ //eslint-disable-line
     res.status(500).json({
         customMessage: 'something went wrong inside the recipes router',

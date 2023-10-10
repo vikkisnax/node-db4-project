@@ -42,7 +42,7 @@ async function getRecipeById(recipe_id){
                 step_id: row.step_id,
                 step_number: row.step_number,
                 step_text: row.step_text,  
-                //also return ingredients array now
+                //plus return ingredients array now
                 ingredients: [
                     {
                         ingredient_id: row.ingredient_id,
